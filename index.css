@@ -2,8 +2,17 @@
 
 #landing  {
     background-image: linear-gradient(to top, #A555C9, #EE53AC, #FF6C87, #FF9967);
+    width: 100%;
+    overflow-x: hidden;
+    padding: 0;
    
 }
+
+.row {
+   margin-left: 0;
+   margin-right: 0;
+}
+
 h1{
     text-align: center;
 }
@@ -19,12 +28,11 @@ h1{
     text-align: center;
  }
 
- body {
-   overflow-x: hidden;
-}
-
-#landing {
+ html, body {
+   margin: 0;
    padding: 0;
+   width: 100%;
+   overflow-x: hidden;
 }
 
 .navbar-nav .nav-item .nav-link {
@@ -35,12 +43,8 @@ h1{
    font-weight: bold;
 }
 
-.container-fluid {
-   padding-left: 15px;
-   padding-right: 15px;
-}
 
-img {
+img, iframe {
    max-width: 100%;
    height: auto;
 }
@@ -56,4 +60,26 @@ h1, h2, h3, h5 {
 
 .card {
    margin-bottom: 20px;
+   max-width: 100%;
+   margin-bottom: 20px;
+   width: 100%;
+}
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+.container-fluid, .container {
+   max-width: 100%;
+   padding-left: 15px;
+   padding-right: 15px;
+}
+
+.container-fluid {
+   padding-left: 15px;
+   padding-right: 15px;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
 }
